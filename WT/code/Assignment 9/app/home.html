@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="homeCtrl">
+  <h1>Welcome, {{ loggedInUser }}!</h1>
+
+  <p>You have successfully logged in.</p>
+
+  <button ng-click="logout()">Logout</button>
+</body>
+</html>

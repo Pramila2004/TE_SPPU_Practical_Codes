@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Internal CSS */
+        .welcome-section {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="main-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#reservations" class="nav-link">Reservations</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="welcome-section">
+        <div class="banner-container">
+            <img src="banner.jpg" alt="Restaurant Banner" class="banner-image">
+            <div class="banner-text">
+                <h1>Welcome to Delicious Bites!</h1>
+                <p>Experience the finest dining in town.</p>
+                <a href="#menu" class="banner-button">View Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Appetizer 1</td>
+                    <td>Delicious starter</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Main Course 1</td>
+                    <td>Our signature dish</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>Dessert 1</td>
+                    <td>Sweet treat</td>
+                    <td>$8</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="lists">
+            <h3>Special Offers</h3>
+        <ul>
+            <li>Daily Lunch Specials</li>
+            <li>Weekend Dinner Deals</li>
+        </ul>
+        </div>
+
+        
+    </section>
+
+    <section id="reservations">
+        <h2>Make a Reservation</h2>
+        <form action="/submit_reservation" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+            <input type="submit" value="Submit Reservation">
+        </form>
+    </section>
+
+     <!-- Contact Section -->
+     <section class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>Have questions or feedback? We’d love to hear from you!</p>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Visit Us</h3>
+            <p><b>Address:</b> 123 Food Street, City, Country</p>
+            <p><b>Phone:</b> +1 234 567 890</p>
+            <p><b>Email:</b> contact@deliciousbites.com</p>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <h3>Find Us Here</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450868!2d144.95373531531576!3d-37.81627974202196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577c77f9b1a1b24!2sSome%20Restaurant!5e0!3m2!1sen!2sus!4v1614180445223!5m2!1sen!2sus" 
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+
+        <!-- Social Media Links -->
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Delicious Bites Restaurant</p>
+    </footer>
+
+</body>
+</html>
